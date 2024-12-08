@@ -1,0 +1,24 @@
+<ng-container>
+  @if (posts && posts.length > 0) {
+  <div>
+    @for (post of posts; track $index) {
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> {{ post.title }} </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{ post.content }}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState.set(true)"
+        (closed)="panelOpenState.set(false)"
+      >
+      </mat-expansion-panel>
+    </mat-accordion>
+    }
+  </div>
+  } @else {
+  <p>No Posts Available</p>
+  }
+</ng-container>
+

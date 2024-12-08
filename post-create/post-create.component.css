@@ -1,0 +1,19 @@
+form {
+  margin: auto;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 30%;
+}

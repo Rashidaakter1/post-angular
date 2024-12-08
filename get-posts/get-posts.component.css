@@ -1,0 +1,11 @@
+:host {
+  text-align: center;
+  display: block;
+  padding-top: 36px;
+  width: 80%;
+  margin: auto;
+}
+
+mat-expansion-panel {
+  margin-bottom: 8px;
+}
